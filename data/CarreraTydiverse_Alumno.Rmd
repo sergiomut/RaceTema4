@@ -101,7 +101,6 @@ mydf<-mydf[I,]
 # Guardamos en formato binario, la primera vez que cargamos
 save(file = './data/2024-03-12.Rdata',list=c('mydf'))
 ```
-
 Después de la primera carga poner **eval=FALSE** en el *chunk* anterior para acelerar la ejecución.
 
 ```{r}
@@ -144,7 +143,7 @@ select(cran, ip_id, package, country)
 ```
 5. Elige todas las variables entre `r_arch y country` 
 ```{r}
-
+ select(cran,r_arch:country)
 ```
 5. Puedes usar el signo (-) para no coger una columna determinada. Selecciona todas las columnas menos las que están entre `date y size` 
 ```{r}
