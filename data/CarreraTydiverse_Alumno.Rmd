@@ -180,10 +180,11 @@ cran%>%filter(!is.na(r_arch))
 ```{r}
 cran2 <- select(cran, size:ip_id)
 cran2
-
 ```
 11. Ordena `cran2` en orden ascendente según la variable `ip_id`.
 ```{r}
+cran2 <- arrange(cran2, ip_id)
+cran2
 
 ```
 12. Ordena `cran2` en orden descendente según la variable `ip_id`.
