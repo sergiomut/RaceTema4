@@ -185,11 +185,11 @@ cran2
 ```{r}
 cran2 <- arrange(cran2, ip_id)
 cran2
-
 ```
 12. Ordena `cran2` en orden descendente según la variable `ip_id`.
 ```{r}
-
+cran2 <- arrange(cran2, desc(ip_id))
+cran2
 ```
 12. Ordena `cran2` según los valores de `package e ip_id`.
 ```{r}
